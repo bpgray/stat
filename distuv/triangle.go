@@ -154,7 +154,7 @@ func (t Triangle) Survival(x float64) float64 {
 // UnmarshalParameters implements the ParameterMarshaler interface
 func (t *Triangle) UnmarshalParameters(p []Parameter) {
 	if len(p) != t.NumParameters() {
-		panic("uniform: incorrect number of parameters to set")
+		panic("triangle: incorrect number of parameters to set")
 	}
 	if p[0].Name != "A" {
 		panic("triangle: " + panicNameMismatch)
